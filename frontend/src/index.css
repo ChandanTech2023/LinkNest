@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Themes Definitions */
+
+/* 1. DARK THEME */
+.theme-dark {
+  background-color: #0f0f12;
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+.theme-dark .profile-name {
+  color: #ffffff;
+}
+.theme-dark .profile-bio {
+  color: #9ca3af;
+}
+.theme-dark .link-card {
+  background-color: #1a1a24;
+  border: 1px solid #2e2e3f;
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-dark .link-card:hover {
+  transform: translateY(-4px);
+  border-color: #8b5cf6;
+  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.15);
+}
+
+/* 2. GRADIENT THEME */
+.theme-gradient {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+.theme-gradient .profile-name {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.theme-gradient .profile-bio {
+  color: #e0e7ff;
+}
+.theme-gradient .link-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-gradient .link-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. MINIMAL THEME */
+.theme-minimal {
+  background-color: #fcfcfc;
+  color: #171717;
+  min-height: 100vh;
+}
+.theme-minimal .profile-name {
+  color: #171717;
+}
+.theme-minimal .profile-bio {
+  color: #666666;
+}
+.theme-minimal .link-card {
+  background-color: #ffffff;
+  border: 1.5px solid #e5e5e5;
+  color: #171717;
+  transition: all 0.25s ease;
+}
+.theme-minimal .link-card:hover {
+  transform: translateY(-3px);
+  border-color: #171717;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. NEON THEME */
+.theme-neon {
+  background-color: #030303;
+  color: #39ff14;
+  min-height: 100vh;
+}
+.theme-neon .profile-name {
+  color: #ffffff;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+.theme-neon .profile-bio {
+  color: #a3e635;
+}
+.theme-neon .link-card {
+  background-color: #0d0d0d;
+  border: 1.5px solid #39ff14;
+  color: #39ff14;
+  box-shadow: 0 0 5px rgba(57, 255, 20, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-neon .link-card:hover {
+  transform: translateY(-4px);
+  background-color: #141414;
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
+}
+
+/* 5. PASTEL THEME */
+.theme-pastel {
+  background-color: #faf6f0;
+  color: #4c3f54;
+  min-height: 100vh;
+}
+.theme-pastel .profile-name {
+  color: #4c3f54;
+  font-weight: 700;
+}
+.theme-pastel .profile-bio {
+  color: #7b6d80;
+}
+.theme-pastel .link-card {
+  background-color: #eef2ff;
+  border: 1.5px solid #c7d2fe;
+  color: #4c3f54;
+  transition: all 0.3s ease;
+}
+.theme-pastel .link-card:hover {
+  transform: translateY(-4px);
+  background-color: #e0e7ff;
+  border-color: #a5b4fc;
+  box-shadow: 0 8px 16px rgba(165, 180, 252, 0.25);
+}
